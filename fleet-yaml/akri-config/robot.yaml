@@ -20,6 +20,8 @@ spec:
         env:
         - name: NATS_URL
           value: "nats://nats.nats:4222"
+        - name: UDEV_DEVNODE
+          value: "/dev/ttyACM0"
         resources:
           limits:
             '{{PLACEHOLDER}}': "1"
